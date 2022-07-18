@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    {% for category,message in messages %}
+    <div class="alert alert-{{ category }} alert-dismissible" style="margin-top: -25px;" role="alert">
+        <div class="row">
+            <!-- <strong>Title</strong> -->
+            <h3 style="margin-left: 650px;
+            margin-top: 27px;">{{ message }}</h3>
+            <!-- <button type="button" class="close" style="margin-left: 883px;
+            margin-top: -21px;
+            margin-bottom: 5px; max-width: 20px;" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+        </div>
+
+    </div>
+    <!-- <p style="align-items: center; padding: auto;">{{ message }}</p>   -->
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+<div class="card-wrapper">
+    <div class="card">
+        <h1 class="center">Log In</h1>
+        <form action="" name="login_form">
+            <label for="name">Email</label>
+            <input type="email" name="email" class="field" required>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" class="field" required>
+
+            <p class="error error--hidden"></p>
+
+
+
+            
+            <div class="center d-grid gap-2 d-md-block">
+                <button type="submit" class=" center btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Login
+                </button>
+                <button type="button" class=" center btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <a href="/signup/" style="color:white; text-decoration: none;">Sign Up</a>
+                </button>
+
+            </div>
+            <button type="button"><a href="/contact/" style="text-decoration: none;">Forgot Password</a></button>
+           
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card-wrapper">
+
+    <div class="card">
+
+        <h1 class="center">Update Details</h1>
+        <form ation="" name="update_form">
+                <!-- <label for="Profile_Name" class="col-sm-5 col-form-label">Profile name</label>
+                <input type="text" class="form-control" name="Profile_Name" placeholder="Name"> -->
+                <label for="Profile_Name">Name</label>
+                <input type="text" name="Profile_Name" class="field" required>
+    
+                <!-- <label for="Email" class="col-sm-5 col-form-label">Email</label>
+                <input type="email" class="form-control" name="Email" placeholder="Email"> -->
+                <label for="phn">Phone Number</label>
+                <input type="text" name="phn" class="field" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" class="field" required>
+                <label for="C_pass">Password</label>
+                <input type="password" name="C_pass" class="field" required>
+    
+                <!-- <label for="password" class="col-sm-5 col-form-label">Password</label>
+                <input type="password" class="form-control" name="password" placeholder="Password">
+                
+                <label for="C_pass" class="col-sm-5 col-form-label"> Cofirm Password</label>
+                <input type="password" class="form-control" name="C_pass" placeholder="Password"> -->
+                <p class="error error--hidden"></p>
+                <div class="d-grid gap-2 d-md-block">
+                    
+                    <center>
+                    <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Reset 
+                    </button>
+                    </center>
+                    <a href="/dashboard/">Back</a>
+                    
+                </div>
+                <!-- Modal -->
+                <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h6 class="modal-title" id="exampleModalLabel">Profile Updated Successfully</h6>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+              
+
+        </form>
+    </div>
+
+
+</div>
+{% endblock %}

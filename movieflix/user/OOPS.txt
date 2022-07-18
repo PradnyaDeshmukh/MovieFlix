@@ -1,0 +1,47 @@
+class Person:  
+      
+    # init method or constructor   
+    def __init__(self, name):  
+        self.name = name  
+      
+    # Sample Method   
+    def say_hi(self):  
+        print('Hello, my name is', self.name)  
+      
+p = Person('Nikhil')  
+p.say_hi() 
+
+
+class Kartik:
+    def __init__(self,email):
+        self.email = email
+
+
+k = Kartik(email)
+
+Movie details
+Name:
+Release Date:
+Movie link:
+Cast:{}
+Ratings:
+Description:
+Duration:
+
+
+db.movieDetails.insert({"Name":"Jolly LLB2","ReleaseDate":"10/02/2017", "MovieLink":"https://www.youtube-nocookie.com/embed/Ahuf9v1G6cM?controls=0","cast":['Akshay Kumar','Huma Qureshi', 'Saurabh Mishra', 'Annu Kapoor'], "Ratings":7.2, "Description":"Jagdishwar "Jolly" Mishra (Akshay Kumar) is a Lucknow based lawyer, who stays with his wife Pushpa (Huma Qureshi) and son. Despite being a lawyer, he works as a menial assistant to one of the most famous lawyers of Lucknow, Mr. Rizvi, for whom his father had worked as an assistant for 30 years.", "Duration":"137 min")
+"Name":"Jolly LLB2",
+    "ReleaseDate":"10/02/2017", 
+    "MovieLink":"https://www.youtube-nocookie.com/embed/Ahuf9v1G6cM?controls=0",
+    "cast":['Akshay Kumar','Huma Qureshi', 'Saurabh Mishra', 'Annu Kapoor'], 
+    "Ratings":7.2, 
+    "Duration":"137 min",    
+    "Description":"Jagdishwar 'Jolly' Mishra (Akshay Kumar) is a Lucknow based lawyer, who stays with his wife Pushpa (Huma Qureshi) and son. Despite being a lawyer, he works as a menial assistant to one of the most famous lawyers of Lucknow, Mr. Rizvi, for whom his father had worked as an assistant for 30 years."
+
+
+
+Profile
+profile Name
+sign out
+update
+delete

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card-wrapper">
+    <div class="card">
+        <h1 class="center">Reset Password</h1>
+        <form action="" name="reset_form">
+            <label for="name">New Password</label>
+            <input type="password" name="pass1" placeholder="Enter new password" class="field" required>
+
+            <p class="error error--hidden"></p>
+
+            <!-- Button trigger modal -->
+
+            <div class="d-grid gap-2 d-md-block">
+
+                <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Reset 
+                </button>
+                
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h6 class="modal-title" id="exampleModalLabel">Password Updated Successfully</h6>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

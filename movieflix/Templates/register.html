@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card-wrapper">
+
+    <div class="card">
+        <h1 class="center">Create An Account</h1>
+        <form action="" name="signup_form">
+            <label for="name">Name</label>
+            <input type="text" name="name" class="field" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" class="field" required>
+            
+            <label for="phn">Phone Number</label>
+            <input type="text" name="phn" class="field" required>
+            
+            <label for="password">Password</label>
+            <input type="password" name="password" class="field" required>
+
+            <p class="error error--hidden"></p>
+
+            <div class="center d-grid gap-2 d-md-block">
+                <button type="submit" class=" center btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Sign Up
+                </button>
+                <button type="button" class=" center btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <a href="/" style="color:white; text-decoration: none;">Login</a>
+                </button>
+
+            </div>
+
+        </form>
+    </div>
+</div>
+{% endblock %}
